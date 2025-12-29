@@ -337,6 +337,23 @@ a {
     object-fit: cover;
 }
 
+footer {
+    width: 95%;
+    max-width: 1440px;
+    background-color: var(--main-bg-color);
+    gap: 50px;
+}
+
+.footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    width: 90%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
