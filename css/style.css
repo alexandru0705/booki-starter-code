@@ -34,7 +34,7 @@ nav {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    height: 80px;
+    height: 70px;
     margin: 0px;
 }
 
@@ -297,6 +297,7 @@ a {
 .hebergements .card-subtitle {
     margin-top: 5px;
 }
+
 .main-card {
     background-color: white;
     border-radius: 20px;
@@ -380,7 +381,7 @@ a {
 
 
 .activity-card .card-title {
-  text-align: center;
+    text-align: center;
 }
 
 
@@ -407,6 +408,8 @@ a {
     display: block;
     text-decoration: none;
     color: inherit;
+    width: 100%;
+    height: 150px
 }
 
 .activity-card {
@@ -414,7 +417,7 @@ a {
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    width: 250px;
+    width: 100%;
     min-height: 350px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
@@ -428,6 +431,8 @@ a {
     object-fit: cover;
     display: block;
 }
+
+
 
 footer {
     width: 95%;
@@ -455,7 +460,7 @@ footer {
     .main-container {
         flex-direction: column;
     }
-    
+
     .activites-cards {
         align-items: center;
     }
@@ -505,7 +510,7 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    
+
     .filtres {
         flex-direction: column;
         align-items: flex-start;
@@ -525,28 +530,164 @@ footer {
     .hebergements {
         width: 100%;
         justify-content: space-between;
-        
+
     }
 
     .main-card {
         width: 100%;
         justify-content: flex-start;
         align-items: flex-start;
-        }
+    }
 
     .main-card img {
         width: 100%;
-     }
+    }
 
-     .main-card .card-content {
+    .main-card .card-content {
         width: 100%;
         padding-left: 10px;
-     }
-    
-     
+    }
+
+
+
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+
+    header {
+        gap: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 50px;
+    }
+
+    .logo img {
+        padding-top: 20px;
+        width: 100px;
+        height: 34px;
+    }
+
+    .nav-links {
+        min-width: 100%;
+        gap: 0px;
+    }
+
+
+    .li-title a {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .li-title a:hover::after {
+        content: '';
+        color: #0065fc;
+        position: absolute;
+        top: 20px;
+        bottom: -10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+        align-items: center;
 
     }
-    /* Small devices (phones, less than 768px) */
-    @media (max-width: 767.98px) {
-        /* ... */
+
+    .icon-box {
+        margin-left: 10px;
     }
+
+    .filtres-list {
+        flex-wrap: wrap;
+    }
+
+    .main-container {
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+
+    .hebergements {
+        flex-direction: column;
+    }
+
+    .hebergements a {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .populaires {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .hebergements-and-populaires {
+        width: 100%;
+        border-radius: 0px;
+        padding: 20px 20px 20px 20px;
+        background-color: transparent;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .activites-cards {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .activites-cards a {
+        width: 100%;
+        height: auto;
+    }
+
+    .activity-card .card-title {
+        justify-content: left;
+    }
+
+    .activity-card {
+        width: 100%;
+        height: auto;
+    }
+    
+
+
+    .card {
+        width: auto;
+        height: 150px;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .main-card {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
