@@ -218,7 +218,12 @@ body {
 }
 
 .main-card img {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 2%;
+    width: 96%;
     border-radius: 10px 10px 0 0;
     height: 110px;
 }
@@ -245,6 +250,9 @@ body {
 
 .populaires-cards a {
     text-decoration: none;
+    display: block;
+    width: 355px;
+    margin-bottom: 20px;
 }
 
 .populaires-cards {
@@ -262,13 +270,12 @@ body {
     height: 140px;
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
 .card img {
     width: 100px;
     border-radius: 10px 0 0 10px;
-    object-fit: cover;
+    padding: 1%;
 }
 
 .card-title, .card-subtitle {
