@@ -122,7 +122,9 @@ h2 {
     border: none;
     border-radius: 0 8px 8px 0;
     padding: 0 10px 0 20px;
+    cursor: pointer;
 }
+
 
 .search-btn:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -588,7 +590,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    
+
 
     .activite-card .card-title {
         display: flex;
